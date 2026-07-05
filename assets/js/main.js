@@ -51,10 +51,6 @@ const BRANCHES = [
     address: "Gen. Luna St., Brgy. 10, Sabang, Lipa City, Batangas", phone: "0981-225-3736",
     hours: { alwaysOpen: true }, badge: "Open 24/7" },
 
-  { name: "Kwatogs Mataas na Kahoy", city: "Mataas na Kahoy", province: "Batangas",
-    address: "210 V. Templo St., Brgy. 4, Mataas na Kahoy, Batangas", phone: "0908-960-1032",
-    hours: { open: "08:00", close: "21:00" } },
-
   { name: "Kwatogs Malvar", city: "Malvar", province: "Batangas",
     address: "Luta del Norte, Malvar, Batangas", phone: "0985-477-5724",
     hours: { open: "05:00", close: "22:00" } },
@@ -90,6 +86,10 @@ const BRANCHES = [
   { name: "Kwatogs Batangas — Bolbok Diversion", city: "Batangas City", province: "Batangas",
     address: "Purok 3, Bolbok, Batangas City", phone: "0927-067-0715",
     hours: { open: "06:00", close: "23:30" } },
+
+  { name: "Kwatogs San Pascual", city: "San Pascual", province: "Batangas",
+    address: "Brgy. San Antonio, San Pascual, Batangas", phone: "",
+    hours: { open: "10:00", close: "22:00" }, badge: "New!" },
 
   // ---- LAGUNA ----
   { name: "Kwatogs San Pablo — Calihan", city: "San Pablo City", province: "Laguna",
@@ -133,10 +133,6 @@ const BRANCHES = [
     hours: { open: "07:00", close: "00:00" } },
 
   // ---- CAVITE ----
-  { name: "Kwatogs Trece Martires", city: "Trece Martires City", province: "Cavite",
-    address: "085 Brgy. Luciano, Trece Martires City, Cavite", phone: "0917-844-5743",
-    hours: { open: "11:30", close: "23:30" } },
-
   { name: "Kwatogs Silang", city: "Silang", province: "Cavite",
     address: "San Miguel 2, Emilio Aguinaldo Highway, Bypass Road, Silang, Cavite", phone: "0927-471-0650",
     hours: { open: "10:00", close: "23:00" } },
