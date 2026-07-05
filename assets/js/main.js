@@ -349,6 +349,7 @@ function initForms() {
         const json = await res.json();
         if (json.success) {
           if (success) success.style.display = "block";
+          if (btn) btn.textContent = "Sent ✓";
           lock();
         } else {
           throw new Error(json.message || "Submission failed");

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="assets/css/style.css?v=3" />
 </head>
 <body>
 
@@ -173,43 +173,57 @@
         <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" />
         <div class="form-grid">
           <div class="field">
-            <label for="f-name">Full Name *</label>
-            <input id="f-name" name="name" type="text" required placeholder="Juan Dela Cruz" />
-          </div>
-          <div class="field">
             <label for="f-email">Email Address *</label>
             <input id="f-email" name="email" type="email" required placeholder="you@email.com" />
           </div>
           <div class="field">
-            <label for="f-phone">Mobile Number *</label>
-            <input id="f-phone" name="mobile" type="tel" required placeholder="09XX-XXX-XXXX" />
+            <label for="f-name">Your Name *</label>
+            <input id="f-name" name="name" type="text" required placeholder="Juan dela Cruz" />
           </div>
           <div class="field">
-            <label for="f-city">Target City / Province *</label>
-            <input id="f-city" name="target_area" type="text" required placeholder="e.g., Naga City, Camarines Sur" />
+            <label for="f-age">Your Age *</label>
+            <input id="f-age" name="age" type="number" min="18" required placeholder="e.g., 35" />
           </div>
           <div class="field">
-            <label for="f-site">Do you have a location?</label>
-            <select id="f-site" name="has_location">
-              <option>Yes — owned</option>
-              <option>Yes — for lease</option>
-              <option>Still looking</option>
-              <option>Not yet</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-budget">Investment Budget Range</label>
-            <select id="f-budget" name="budget">
-              <option>Prefer to discuss</option>
-              <option>Below ₱1M</option>
-              <option>₱1M – ₱2M</option>
-              <option>₱2M – ₱3M</option>
-              <option>Above ₱3M</option>
-            </select>
+            <label for="f-phone">Contact Number *</label>
+            <input id="f-phone" name="contact_number" type="tel" required placeholder="09XX-XXX-XXXX" />
           </div>
           <div class="field full">
-            <label for="f-msg">Tell us about yourself (optional)</label>
-            <textarea id="f-msg" name="about" rows="4" placeholder="Business background, why Kwatogs, timeline…"></textarea>
+            <label for="f-location">Where is your prospect location to put up your own Kwatogs? *</label>
+            <input id="f-location" name="prospect_location" type="text" required placeholder="e.g., Calaca, Batangas" />
+          </div>
+          <div class="field">
+            <label for="f-employed">Are you currently employed? *</label>
+            <select id="f-employed" name="currently_employed" required>
+              <option value="" disabled selected>— Select —</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-owns">Are you currently owning a restaurant? *</label>
+            <select id="f-owns" name="currently_owns_restaurant" required>
+              <option value="" disabled selected>— Select —</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-operated">Have you operated a restaurant before? *</label>
+            <select id="f-operated" name="operated_restaurant_before" required>
+              <option value="" disabled selected>— Select —</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-risk">Risk Tolerance *</label>
+            <select id="f-risk" name="risk_tolerance" required>
+              <option value="" disabled selected>— Select —</option>
+              <option>Conservative</option>
+              <option>Moderate</option>
+              <option>Aggressive</option>
+            </select>
           </div>
         </div>
         <div style="margin-top: 22px;">
@@ -281,6 +295,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/main.js?v=3"></script>
 </body>
 </html>
