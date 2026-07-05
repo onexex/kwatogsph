@@ -307,7 +307,7 @@ function initFeaturedBranches() {
 // Paste it below. Submissions then arrive at that inbox. The key is public/safe
 // to expose in client code. Until a real key is set, forms show a local
 // "received" message but do NOT actually send.
-const WEB3FORMS_ACCESS_KEY = "YOUR-WEB3FORMS-ACCESS-KEY";
+const WEB3FORMS_ACCESS_KEY = "1e04d70b-e803-432b-92cf-84b38e63083a";
 
 function initForms() {
   const configured = WEB3FORMS_ACCESS_KEY && WEB3FORMS_ACCESS_KEY !== "YOUR-WEB3FORMS-ACCESS-KEY";

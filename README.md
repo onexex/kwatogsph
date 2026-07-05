@@ -12,9 +12,9 @@ any static server.
 | Our Story | `our-story.html` | Real timeline from the Franchising.PH 2026 feature |
 | Menu | `menu.html` | 10 categories incl. Goto, Tapsi (Silog), Sisig from the actual signage |
 | Branches | `branches.html` | Live finder: search, province chips, Open Now / 24/7 filters |
-| Franchise | `franchise.html` | Real package inclusions + inquiry form (Web3Forms — needs access key) |
+| Franchise | `franchise.html` | Real package inclusions + inquiry form (Web3Forms — live) |
 | Careers | `careers.html` | Sample roles |
-| Contact | `contact.html` | Real contact channels + message form (Web3Forms — needs access key) |
+| Contact | `contact.html` | Real contact channels + message form (Web3Forms — live) |
 
 ## What is REAL (sourced from the Franchising.PH 2026 magazine feature & official materials)
 
@@ -52,7 +52,7 @@ any static server.
 
 ## Wiring needed at launch
 
-1. **Forms** (`franchise.html`, `contact.html`) are wired to **Web3Forms** (see `initForms()` in `main.js`). **One step to go live:** get a free access key at https://web3forms.com (enter `kwatogslipa@gmail.com`; the key is emailed instantly, no login), then paste it into `WEB3FORMS_ACCESS_KEY` at the top of the form section in `main.js`. Submissions then email that inbox. Until the key is set, forms show a local "received" message but do NOT send. Optional: enable the Web3Forms → Google Sheets integration from their dashboard so franchise leads also log to a Sheet.
+1. **Forms** (`franchise.html`, `contact.html`) are **LIVE** via **Web3Forms** (see `initForms()` in `main.js`; access key is set in `WEB3FORMS_ACCESS_KEY`). Submissions email the inbox tied to that key. Verified working (POST → 200) on 2026-07-05. To change the destination, regenerate the key at https://web3forms.com with a different email. Optional: enable the Web3Forms → Google Sheets integration from their dashboard to also log leads to a Sheet (owner declined for now — email only).
 2. **Delivery links** currently point to GrabFood/foodpanda homepages — replace with each branch's actual store URL. (The GrabFood/foodpanda logos are the official PNGs, whitespace-trimmed via `../.imgtools/logos.js`.)
 3. **Franchise Kit PDF** — produce and host the actual kit
 4. Add per-branch pages + LocalBusiness schema once the official directory is final
