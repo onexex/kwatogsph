@@ -25,7 +25,7 @@ any static server.
 - Mid-2025 franchising pause to strengthen the **commissary**; commissary opens **Q2 2026**; franchising reopening
 - **Franchise package inclusions** (all 12 items on the franchise page) — verbatim from the feature
 - Founders' quote ("Stay committed. Keep moving forward…")
-- Contact: **kwatogslipa@gmail.com · 0992-869-4196 · facebook.com/KwatogsLipa (Kwatogs PH)**
+- Contact: **kwatogslipa@gmail.com · 0968-877-6373 · facebook.com/KwatogsLipa (Kwatogs PH)**
 - Signage line: **LOMI X CHAMI X TAPSI X SISIG** (from the menu board). NOTE: the magazine storefront photo shows **GOTO X LOMI X TAPSI X SISIG** — the brand uses both. The site currently follows the menu board version; confirm the preferred tagline with the owners.
 - Tagline: **"Taste comes first, toppings come second."**
 - **Full menu** (`menu.html`) — all items from the official Kwatogs branch menu boards: Lomi (all sizes/variants), Chami Tamis-Anghang, Black Guisado, the Funsitan pancit family (Canton, Bihon, Sotanghon, Guisado, Kinaldereta, Lang-Lang + mixes), Silog meals, Sizzling/Sisig specials, Pansit sa Bilao trays, Rice meals. **Prices are intentionally not shown** (per owner request — they vary by branch). The page uses a card design: each dish has a description + variant pills (Special/Chicken/Sisig/Lechon, or size pills), with an ordering strip pointing to GrabFood/foodpanda. (The old price values still exist in git/menu-board photos if needed later; the `.price-list` CSS is unused but kept.)
